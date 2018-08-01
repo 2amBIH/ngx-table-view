@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArekX/ngx-table-view.git"
+    "url": "git+https://github.com/2amBIH/ngx-table-view.git"
   },
   "keywords": [
     "angular",
@@ -21,7 +21,7 @@
   "author": "Aleksandar Panic",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ArekX/ngx-table-view/issues"
+    "url": "https://github.com/2amBIH/ngx-table-view/issues"
   },
-  "homepage": "https://github.com/ArekX/ngx-table-view#readme"
+  "homepage": "https://github.com/2amBIH/ngx-table-view#readme"
 }
