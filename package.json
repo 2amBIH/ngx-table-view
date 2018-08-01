@@ -23,6 +23,7 @@
     "@angular/http": "6.1.0",
     "@angular/common": "6.1.0"
   },
+  "main": "src/index.ts",
   "author": "Aleksandar Panic",
   "license": "MIT",
   "bugs": {
