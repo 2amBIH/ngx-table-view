@@ -1,6 +1,6 @@
 {
   "name": "@2aminternal/ngx-table-view",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Angular 6+ Table View with Template rendering functionality",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
