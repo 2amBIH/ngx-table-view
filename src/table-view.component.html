@@ -1,0 +1,34 @@
+<div>
+  <ng-content></ng-content>
+  <table class="table-view">
+    <thead>
+      <tr>
+        <th *ngFor="let column of columnTemplates" [ngClass]="column.getHeaderClass(provider)">
+          <span (click)="sortBy(column)">{{ renderColumnHeader(column) }}</span>
+          <span *ngIf="provider.hasSort" [ngClass]="getColumnSortClass(column)"></span>
+          <ng-container *ngTemplateOutlet="column.filterTpl; context: column.inContext({header: true}, provider)"></ng-container>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="loadingMode">
+          <td [attr.colspan]="columnTemplates.length">
+            <ngx-loader width="32px" height="32px"></ngx-loader>
+            {{loadingText}}
+          </td>
+      </tr>
+      <tr *ngIf="!loadingMode && provider.isEmpty">
+          <td [attr.colspan]="columnTemplates.length">{{emptyText}}</td>
+      </tr>
+      <ng-container *ngIf="!loadingMode">
+      <tr *ngFor="let row of provider.items">
+        <td *ngFor="let column of columnTemplates" [ngClass]="column.getCellClass()">
+          <ng-container *ngTemplateOutlet="column.templateSpec; context: column.inContext(row, provider)"></ng-container>
+          <ng-container *ngIf="!column.templateSpec">{{ renderValue(column, row) }}</ng-container>
+        </td>
+      </tr>
+    </ng-container>
+    </tbody>
+  </table>
+  <ngx-tbl-pagination [provider]="provider" [disabled]="loadingMode"></ngx-tbl-pagination>
+</div>

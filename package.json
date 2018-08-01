@@ -1,0 +1,27 @@
+{
+  "name": "ngx-table-view",
+  "version": "1.0.0",
+  "description": "Angular 4 Table View with Template rendering functionality",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArekX/ngx-table-view.git"
+  },
+  "keywords": [
+    "angular",
+    "4",
+    "ngx",
+    "table",
+    "view",
+    "template",
+    "rendering"
+  ],
+  "author": "Aleksandar Panic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArekX/ngx-table-view/issues"
+  },
+  "homepage": "https://github.com/ArekX/ngx-table-view#readme"
+}
