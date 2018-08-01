@@ -1,5 +1,5 @@
 {
-  "name": "ngx-table-view",
+  "name": "@2aminternal/ngx-table-view",
   "version": "1.0.0",
   "description": "Angular 4 Table View with Template rendering functionality",
   "scripts": {
@@ -18,6 +18,11 @@
     "template",
     "rendering"
   ],
+  "dependencies": {
+    "@angular/core": "6.1.0",
+    "@angular/http": "6.1.0",
+    "@angular/common": "6.1.0"
+  },
   "author": "Aleksandar Panic",
   "license": "MIT",
   "bugs": {
