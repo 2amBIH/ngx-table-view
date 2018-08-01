@@ -3,7 +3,7 @@ import { Component, Input } from "@angular/core";
 import { DataProvider } from "./data.provider";
 
 @Component({
-    selector: 'twoam-pagination',
+    selector: 'ngx-tbl-pagination',
     templateUrl: './pagination.component.html',
     styleUrls: ['./pagination.component.scss'],
 })
