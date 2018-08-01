@@ -1,2 +1,2 @@
 # ngx-table-view
-Angular 4 Table View with template rendering
+Angular 6+ Table View with template rendering
