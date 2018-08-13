@@ -1,0 +1,34 @@
+<nav class="pagination-nav" *ngIf="provider.totalCount > provider.items.length">
+  <ul class="pagination pagination">
+    <li class="pagination-item page-item">
+      <a aria-label="First" class="ng2-smart-page-link page-link" href="javascript:void(0)" (click)="goToFirstPage()">
+        <span aria-hidden="true">«</span>
+        <span class="sr-only">First</span>
+      </a>
+    </li>
+    <li class="pagination-item page-item">
+      <a aria-label="Prev" class="ng2-smart-page-link page-link page-link-prev" href="javascript:void(0)" (click)="previousPage()">
+        <span aria-hidden="true">&lt;</span>
+        <span class="sr-only">Prev</span>
+      </a>
+    </li>
+    <li class="pagination-item page-item" [ngClass]="{'active': page == currentPage}" *ngFor="let page of pageItems">
+      <a class="ng2-smart-page-link page-link" *ngIf="page != currentPage" href="javascript:void(0)" (click)="changePage(page)">{{page}}</a>
+      <span class="ng2-smart-page-link page-link" *ngIf="page == currentPage">{{page}}
+            <span class="sr-only">(current)</span>
+          </span>
+    </li>
+    <li class="pagination-item page-item">
+      <a aria-label="Next" class="ng2-smart-page-link page-link page-link-next" href="javascript:void(0)" (click)="nextPage()">
+        <span aria-hidden="true">&gt;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+    <li class="pagination-item page-item">
+      <a aria-label="Last" class="ng2-smart-page-link page-link" href="javascript:void(0)" (click)="goToLastPage()">
+        <span aria-hidden="true">»</span>
+        <span class="sr-only">Last</span>
+      </a>
+    </li>
+  </ul>
+</nav>

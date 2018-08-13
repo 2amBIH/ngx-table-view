@@ -1,0 +1,25 @@
+{
+  "name": "@2aminternal/ngx-table-view",
+  "version": "1.0.7",
+  "description": "Angular 6+ Table View with Template rendering functionality",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/http": "6.1.0"
+  },
+  "keywords": [
+    "angular",
+    "4",
+    "ngx",
+    "table",
+    "view",
+    "template",
+    "rendering"
+  ],
+  "author": "Aleksandar Panic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/2amBIH/ngx-table-view/issues"
+  },
+  "homepage": "https://github.com/2amBIH/ngx-table-view#readme"
+}

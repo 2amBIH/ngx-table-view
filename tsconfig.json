@@ -16,6 +16,16 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-table-view": [
+        "dist/ngx-table-view",
+        "dist/ngx-table-view"
+      ],
+      "ngx-table-view/*": [
+        "dist/ngx-table-view/*",
+        "dist/ngx-table-view/*"
+      ]
+    }
   }
 }
