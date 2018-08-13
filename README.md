@@ -75,9 +75,9 @@ this.myProvider.sort = {
 ```
 Parameters:
 
-**items** - column keys which are sortable.
-**multisort** - whether or not multisort is allowed.
-**sorted_by** - Definitions of which column its is already sorted by.
+* **items** - column keys which are sortable.
+* **multisort** - whether or not multisort is allowed.
+* **sorted_by** - Definitions of which column its is already sorted by.
 
 Sorting can be modified programmatically by using methods in `DataProvider`.
 
@@ -116,9 +116,9 @@ this.myProvider.pagination = {
 ```
 Parameters:
 
-**total_count** - Total number of items available.
-**page** - Current page displayed.
-**page_size** - Number of items per page.
+* **total_count** - Total number of items available.
+* **page** - Current page displayed.
+* **page_size** - Number of items per page.
 
 Pagination can be modified programmatically by using methods in `DataProvider`.
 
@@ -200,13 +200,13 @@ handleMyData(data) {
 
 Available data in cell:
 
-**name** - column name
-**key** - column key used to get the data. Can be in dot notation. If it's in dot notation (eg. `object.innerprop.innerprop.value`) then the object will be traversed along this path to get the value.
-**passed** - passed data from [passed] param.
-**trigger** - trigger function which will send the data into (trigger) event.
-**provider** - Whole `DataProvider` object
-**row** - Current row
-**value** - Current value
+* **name** - column name
+* **key** - column key used to get the data. Can be in dot notation. If it's in dot notation (eg. `object.innerprop.innerprop.value`) then the object will be traversed along this path to get the value.
+* **passed** - passed data from [passed] param.
+* **trigger** - trigger function which will send the data into (trigger) event.
+* **provider** - Whole `DataProvider` object
+* **row** - Current row
+* **value** - Current value
 
 If you want to use outside template as a reference in the column you can do so:
 
